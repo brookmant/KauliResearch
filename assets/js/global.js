@@ -37,7 +37,7 @@ $(document).ready(function(){
 			}
 			// If on Top Floor
 			else if (SelectFloor  == TopFloor) {
-				var MovingFloors = Math.abs(SelectFloor - CurrentFloor);
+			    var MovingFloors = Math.abs(SelectFloor - CurrentFloor);
 
 			 	$(".p1").text(OpenDoor + " : " + "You are on the Top Floor, get off or select another floor");
 			    $('#CurrentFloor').val(TopFloor);
@@ -52,7 +52,7 @@ $(document).ready(function(){
                 
 		    	function MovingCount() {
 		    		var MovingFloors = Math.abs(SelectFloor - CurrentFloor);
-		    		TotalMovingFloors = MovingFloors + MovingFloors;
+		    		TotalMovingFloors = MovingFloors;
 
 		    	    $("#FloorMoving").val(TotalMovingFloors);
 
