@@ -24,12 +24,18 @@
 	select {
 		margin-bottom: 20px;
 	}
+	.closed {
+		color: red;
+	}
 </style>
 <body>
 <div class="container">
 <h1>Elevators in a Building</h1>
+<hr>
+<h2>Elevator 1</h2>
 <!--button id="submit">Go Evalator</button-->
-<select name="select" id="SelectFloor">
+<label for="">Select Floor to Go To:</label>
+<select name="select" id="SelectFloor1">
 	<option value="Select Floor">Select a Floor</option>
     <option value="1">1</option>
 	<option value="2">2</option>
@@ -40,12 +46,41 @@
 	<option value="7">7</option>
 </select>
 <br>
-<label for="CurrentFloor">Current Floor</label><br>
+<label for="CurrentFloor">Current Floor</label>
 <input id="CurrentFloor" placeholder="Current Floor" value="1" type="text"><br>
 
-<label for="Elevator">Elevator</label><br>
-<input id="Elevator" value="Elevator" placeholder="Elevator" type="text">
-<p></p>
+<label for="Elevator">Elevator Status <strong class="closed"></strong>
+</label><br>
+<input id="Elevator" value="Elevator" placeholder="Elevator" type="text"><br>
+
+<label for="">Count of Floor Moving</label>
+<input id="FloorMoving" value="Floor Moving" placeholder="Floor Moving" type="text">
+<p class="p1"></p>
+
+
+
+
+<hr>
+<h2>Elevator 2</h2>
+
+<select name="select" id="SelectFloor2">
+	<option value="Select Floor">Select a Floor</option>
+    <option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+</select>
+<br>
+
+<label for="CurrentFloor2">Current Floor</label>
+<input id="CurrentFloor2" placeholder="Current Floor" value="2" type="text"><br>
+
+<label for="Elevator">Elevator 2</label>
+<input id="Elevator2" value="Elevator 2" placeholder="Elevator 2" type="text">
+<p class="p2"></p>
 </div>
 </body>
 
