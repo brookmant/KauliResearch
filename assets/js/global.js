@@ -4,7 +4,6 @@ $(document).ready(function(){
     var GroundFloor = 1;
     var TopFloor = 7;
     var ElevatorMove = "Moving";
-    var SelectFloor = $('#SelectFloor option:selected').val();
 
     //Evavator Actions
     var OpenDoor = "Opened";
@@ -12,11 +11,15 @@ $(document).ready(function(){
 
     //Get Floor once selected
     $("#SelectFloor").on("change", function() {
+    	    var SelectFloor = $('#SelectFloor option:selected').val();
+
     	   $('#Elevator').val(SelectFloor);
 	});
 
     //Show Floor of Elevator
     $('#submit').click(function () {
+    	    var SelectFloor = $('#SelectFloor option:selected').val();
+
     	 $('#Elevator').val(SelectFloor);
     });
 });
